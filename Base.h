@@ -1,24 +1,25 @@
-//
-// Created by ivan on 20/02/2021.
-//
 
 #ifndef PRACTICAAC1_BASE_H
 #define PRACTICAAC1_BASE_H
 #include <string>
+using namespace std;
+
+
 
 
 
 class Base {
 public:
-    //constructores
-    alumno(string name, string surName, int dni){ this->dni=dni; this->name=name; this->surName=surName};
-    profesor(string name, string surName, int dni){this->dni=dni; this->name=name; this->surName=surName };
-    string getName(){ return name};
-    string getSurName(){return surName};
+    //constructor
+    Base();
+    Base(string name,string surname, string dni);
+    string getName();
+    string getSurname();
+    string getDni();
 private:
-    int dni;
-    string name;
-    string surName;
+    string m_dni;
+    string m_name;
+    string m_surname;
 };
 
 
